@@ -69,7 +69,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(47)))), ((int)(((byte)(62)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(121)))), ((int)(((byte)(140)))));
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -77,6 +77,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1094, 45);
             this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // pictureBox1
             // 
@@ -105,16 +106,17 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(4, 576);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 20);
+            this.label2.Size = new System.Drawing.Size(112, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "REFERENCE NO";
             // 
             // txtRef
             // 
             this.txtRef.Enabled = false;
-            this.txtRef.Location = new System.Drawing.Point(136, 573);
+            this.txtRef.Location = new System.Drawing.Point(126, 573);
             this.txtRef.Name = "txtRef";
             this.txtRef.Size = new System.Drawing.Size(446, 27);
             this.txtRef.TabIndex = 4;
@@ -122,7 +124,7 @@
             // txtPcode
             // 
             this.txtPcode.Enabled = false;
-            this.txtPcode.Location = new System.Drawing.Point(136, 606);
+            this.txtPcode.Location = new System.Drawing.Point(126, 606);
             this.txtPcode.Name = "txtPcode";
             this.txtPcode.Size = new System.Drawing.Size(446, 27);
             this.txtPcode.TabIndex = 6;
@@ -130,16 +132,17 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(4, 609);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 20);
+            this.label3.Size = new System.Drawing.Size(56, 20);
             this.label3.TabIndex = 5;
             this.label3.Text = "PCODE";
             // 
             // txtDesc
             // 
             this.txtDesc.Enabled = false;
-            this.txtDesc.Location = new System.Drawing.Point(136, 639);
+            this.txtDesc.Location = new System.Drawing.Point(126, 639);
             this.txtDesc.Name = "txtDesc";
             this.txtDesc.Size = new System.Drawing.Size(446, 27);
             this.txtDesc.TabIndex = 8;
@@ -147,15 +150,16 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(4, 642);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 20);
+            this.label4.Size = new System.Drawing.Size(100, 20);
             this.label4.TabIndex = 7;
             this.label4.Text = "DESCRIPTION";
             // 
             // txtQty
             // 
-            this.txtQty.Location = new System.Drawing.Point(136, 672);
+            this.txtQty.Location = new System.Drawing.Point(126, 672);
             this.txtQty.Name = "txtQty";
             this.txtQty.Size = new System.Drawing.Size(446, 27);
             this.txtQty.TabIndex = 10;
@@ -163,18 +167,20 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(4, 675);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(36, 20);
+            this.label5.Size = new System.Drawing.Size(35, 20);
             this.label5.TabIndex = 9;
             this.label5.Text = "QTY";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(588, 576);
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(579, 576);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(72, 20);
+            this.label6.Size = new System.Drawing.Size(87, 20);
             this.label6.TabIndex = 11;
             this.label6.Text = "COMMAND";
             // 
@@ -201,9 +207,10 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(588, 609);
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(579, 609);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(72, 20);
+            this.label7.Size = new System.Drawing.Size(75, 20);
             this.label7.TabIndex = 13;
             this.label7.Text = "REMARKS";
             // 
@@ -219,9 +226,10 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(588, 642);
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(579, 642);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(45, 20);
+            this.label8.Size = new System.Drawing.Size(44, 20);
             this.label8.TabIndex = 15;
             this.label8.Text = "USER";
             // 
@@ -265,6 +273,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(8, 88);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1078, 479);
@@ -275,6 +284,7 @@
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column1.HeaderText = "#";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.Width = 45;
             // 
@@ -282,6 +292,7 @@
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column2.HeaderText = "PCODE";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             this.Column2.Width = 81;
@@ -290,6 +301,7 @@
             // 
             this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column8.HeaderText = "BARCODE";
+            this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
             this.Column8.Width = 99;
@@ -298,6 +310,7 @@
             // 
             this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column4.HeaderText = "DESCRIPTION";
+            this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
             // 
@@ -305,6 +318,7 @@
             // 
             this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column3.HeaderText = "BRAND";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             this.Column3.Width = 81;
@@ -313,6 +327,7 @@
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column5.HeaderText = "CATEGORY";
+            this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
             this.Column5.Width = 108;
@@ -321,6 +336,7 @@
             // 
             this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column6.HeaderText = "PRICE";
+            this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
             this.Column6.Width = 81;
             // 
@@ -330,6 +346,7 @@
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.Column7.DefaultCellStyle = dataGridViewCellStyle3;
             this.Column7.HeaderText = "STOCK ON HAND";
+            this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
             this.Column7.Width = 153;
@@ -339,15 +356,16 @@
             this.Select.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Select.HeaderText = "";
             this.Select.Image = ((System.Drawing.Image)(resources.GetObject("Select.Image")));
+            this.Select.MinimumWidth = 6;
             this.Select.Name = "Select";
-            this.Select.Width = 5;
+            this.Select.Width = 6;
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(129)))), ((int)(((byte)(184)))));
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Location = new System.Drawing.Point(996, 672);
             this.btnSave.Name = "btnSave";

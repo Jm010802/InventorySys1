@@ -35,8 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>ICON.ico</ApplicationIcon>
+    <ApplicationIcon>HP.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup />
   <ItemGroup>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
@@ -160,6 +161,12 @@
     </Compile>
     <Compile Include="frmInventoryReport.Designer.cs">
       <DependentUpon>frmInventoryReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoading.Designer.cs">
+      <DependentUpon>frmLoading.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLookUp.cs">
       <SubType>Form</SubType>
@@ -313,6 +320,9 @@
     <EmbeddedResource Include="frmInventoryReport.resx">
       <DependentUpon>frmInventoryReport.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLoading.resx">
+      <DependentUpon>frmLoading.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLookUp.resx">
       <DependentUpon>frmLookUp.cs</DependentUpon>
     </EmbeddedResource>
@@ -422,6 +432,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\warning-sign-9760.png" />
+    <Content Include="HP.ico" />
     <Content Include="ICON.ico" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">

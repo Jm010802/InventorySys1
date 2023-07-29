@@ -167,6 +167,7 @@ namespace WindowsFormsApp2
         {
             frmRecords frm = new frmRecords();
             frm.TopLevel = false;
+
             frm.LoadCriticalItems();
             frm.LoadInventory();
             frm.CancelledOrders();
@@ -213,6 +214,16 @@ namespace WindowsFormsApp2
         }
 
         private void Label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblUser_Click(object sender, EventArgs e)
         {
 
         }

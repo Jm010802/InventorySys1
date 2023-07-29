@@ -1065,6 +1065,39 @@
                 </Border>
               </Style>
             </Line>
+            <Textbox Name="pCashier">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Parameters!pCashier.Value</Value>
+                      <Style>
+                        <FontFamily>consolas</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>pCashier</rd:DefaultName>
+              <Top>0.54188in</Top>
+              <Left>0.53775in</Left>
+              <Height>0.22233in</Height>
+              <Width>2.53333in</Width>
+              <ZIndex>4</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
             <Textbox Name="Textbox1">
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
@@ -1086,10 +1119,10 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
-              <Left>0.02117cm</Left>
+              <Left>0.06348cm</Left>
               <Height>0.6cm</Height>
               <Width>7.80055cm</Width>
-              <ZIndex>4</ZIndex>
+              <ZIndex>5</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -1122,42 +1155,9 @@
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
               <Top>0.6cm</Top>
-              <Left>0.02116cm</Left>
+              <Left>0.04233cm</Left>
               <Height>0.74111cm</Height>
               <Width>7.80055cm</Width>
-              <ZIndex>5</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Textbox Name="pCashier">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>=Parameters!pCashier.Value</Value>
-                      <Style>
-                        <FontFamily>consolas</FontFamily>
-                        <FontSize>8pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>pCashier</rd:DefaultName>
-              <Top>0.54188in</Top>
-              <Left>0.53775in</Left>
-              <Height>0.22233in</Height>
-              <Width>2.53333in</Width>
               <ZIndex>6</ZIndex>
               <Style>
                 <Border>

@@ -55,7 +55,7 @@
             reportDataSource1.Name = "DataSet1";
             reportDataSource1.Value = this.dtSoldBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "WindowsFormsApp2.Report1.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "HP_InventorySys.Report1.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;

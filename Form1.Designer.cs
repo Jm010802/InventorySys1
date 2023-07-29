@@ -56,7 +56,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(47)))), ((int)(((byte)(62)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(121)))), ((int)(((byte)(140)))));
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -67,19 +67,22 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Consolas", 19.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(455, 8);
+            this.label2.Location = new System.Drawing.Point(381, 3);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(449, 38);
+            this.label2.Size = new System.Drawing.Size(755, 38);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Hi-Power Badminton Court";
+            this.label2.Text = "Hi-Power Badminton Court Inventory System";
             this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(18)))), ((int)(((byte)(42)))));
             this.panel2.Controls.Add(this.lblUser);
             this.panel2.Controls.Add(this.btnSalesHistory);
             this.panel2.Controls.Add(this.button11);
@@ -111,6 +114,7 @@
             this.lblUser.TabIndex = 16;
             this.lblUser.Text = "label1";
             this.lblUser.Visible = false;
+            this.lblUser.Click += new System.EventHandler(this.lblUser_Click);
             // 
             // btnSalesHistory
             // 
@@ -332,9 +336,9 @@
             // 
             // lblRole
             // 
-            this.lblRole.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRole.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRole.ForeColor = System.Drawing.Color.White;
-            this.lblRole.Location = new System.Drawing.Point(58, 127);
+            this.lblRole.Location = new System.Drawing.Point(57, 127);
             this.lblRole.Name = "lblRole";
             this.lblRole.Size = new System.Drawing.Size(208, 33);
             this.lblRole.TabIndex = 2;
@@ -344,14 +348,15 @@
             // 
             // lblName
             // 
-            this.lblName.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(220)))), ((int)(((byte)(255)))));
-            this.lblName.Location = new System.Drawing.Point(71, 98);
+            this.lblName.Location = new System.Drawing.Point(74, 98);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(178, 33);
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Username";
             this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblName.Click += new System.EventHandler(this.lblName_Click);
             // 
             // pictureBox1
             // 

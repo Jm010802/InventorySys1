@@ -169,20 +169,7 @@ namespace WindowsFormsApp2
 
         private void LinkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            frmInventoryReport f = new frmInventoryReport();
-            if (cboTopSelect.Text == "SORT BY QTY")
-            {
-                f.LoadTopSelling("select top 10 pcode, pdesc, isnull(sum(qty),0) as qty, isnull(sum(total),0) as total from vwSoldItems where sdate between '" + dateTimePicker1.Value.ToString() + "' and '" + dateTimePicker2.Value.ToString() + "' and status like 'Sold' group by pcode, pdesc order by qty desc", "From : " + dateTimePicker1.Value.ToString() + " To : " + dateTimePicker2.Value.ToString(),"TOP 10 SELLING ITEMS SORT BY QTY");
-            }
-            else if (cboTopSelect.Text == "SORT BY TOTAL AMOUNT")
-            {
-                f.LoadTopSelling("select top 10 pcode, pdesc, isnull(sum(qty),0) as qty, isnull(sum(total),0) as total from vwSoldItems where sdate between '" + dateTimePicker1.Value.ToString() + "' and '" + dateTimePicker2.Value.ToString() + "' and status like 'Sold' group by pcode, pdesc order by total desc", "From : " + dateTimePicker1.Value.ToString() + " To : " + dateTimePicker2.Value.ToString(), "TOP 10 SELLING ITEMS SORT BY TOTAL AMOUNT");
-            }
-
-
-           
-           
-            f.ShowDialog();
+            
         }
 
         private void LinkLabel6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -349,6 +336,75 @@ namespace WindowsFormsApp2
         private void LinkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+                    }
+
+        private void PictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void linkLabel2_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmInventoryReport f = new frmInventoryReport();
+            if (cboTopSelect.Text == "SORT BY QTY")
+            {
+                f.LoadTopSelling("select top 10 pcode, pdesc, isnull(sum(qty),0) as qty, isnull(sum(total),0) as total from vwSoldItems where sdate between '" + dateTimePicker1.Value.ToString() + "' and '" + dateTimePicker2.Value.ToString() + "' and status like 'Sold' group by pcode, pdesc order by qty desc", "From : " + dateTimePicker1.Value.ToString() + " To : " + dateTimePicker2.Value.ToString(), "TOP 10 SELLING ITEMS SORT BY QTY");
+            }
+            else if (cboTopSelect.Text == "SORT BY TOTAL AMOUNT")
+            {
+                f.LoadTopSelling("select top 10 pcode, pdesc, isnull(sum(qty),0) as qty, isnull(sum(total),0) as total from vwSoldItems where sdate between '" + dateTimePicker1.Value.ToString() + "' and '" + dateTimePicker2.Value.ToString() + "' and status like 'Sold' group by pcode, pdesc order by total desc", "From : " + dateTimePicker1.Value.ToString() + " To : " + dateTimePicker2.Value.ToString(), "TOP 10 SELLING ITEMS SORT BY TOTAL AMOUNT");
+            }
+
+            f.ShowDialog();
+        }
+
+        private void pictureBox1_Click_2(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void linkLabel5_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            CancelledOrders();
+        }
+
+        private void linkLabel3_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmInventoryReport frm = new frmInventoryReport();
+            string param = "Date Covered: " + dateTimePicker5.Value.ToString() + " - " + dateTimePicker6.Value.ToString();
+            frm.LoadCancelledOrder("select * from vwcancelledorder where sdate between '" + dateTimePicker5.Value.ToString() + "' and '" + dateTimePicker6.Value.ToString() + "'", param);
+            frm.ShowDialog();
+        }
+
+        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmInventoryReport frm = new frmInventoryReport();
+            frm.LoadReport();
+            frm.ShowDialog();
         }
     }
 }

@@ -9,8 +9,8 @@ namespace WindowsFormsApp2
         SqlConnection cn = new SqlConnection();
         SqlCommand cm = new SqlCommand();
         DBConnection dbcon = new DBConnection();
-        string store = "Bagong Biñan Commercial Furniture Shop";
-        string address = "Brgy. Poblacion Biñan Laguna";
+        string store = "Hi-Power Badminton Court";
+        string address = "BBL Compound, Canlalay, Biñan, Laguna";
         frmPOS f;
         public frmReceipt(frmPOS frm)
         {

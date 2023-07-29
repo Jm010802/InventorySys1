@@ -649,5 +649,10 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void btnVoid_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
